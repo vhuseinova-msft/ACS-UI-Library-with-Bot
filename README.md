@@ -41,33 +41,25 @@ npm i
 
 ```
 
-Insert endpoint
+Insert auth data
 
 `App.tsx`
 
 ```ts
 
-  const endpoint = "HEEEEEERRRRREEEEEEEEE";
-
-```
-
-Insert function URL
-
-`App.tsx`
-
-```ts
-
-  useEffect(() => {
-    fetch("HEEEEERRRREEEEE")
-    .then(response => response.json())
-    .then(data => {
-      setUser({
-        userId: data.user, 
-        credential: new AzureCommunicationTokenCredential(data.userToken.token)
-      })
-      setThreadId(data.threadId)
-    });
-  },[])
+  const endpoint = ""; //Replace with your endpoint
+  
+  // Response returned by Chat Function
+    const tmpConf: any = {
+      user: {
+        communicationUserId: "", // Replace with a user id for the user in a chat thread with adaptive cards bot
+      },
+      userToken: {
+        token: "", // Replace with ACS token
+        expiresOn: "", // Can be skipped, the field is returned in Chat Function response
+      },
+      threadId: "", // Replace with a thread id with the user and the bot
+    };
 
 ```
 
