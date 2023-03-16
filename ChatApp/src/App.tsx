@@ -93,9 +93,9 @@ function App() {
             onExecuteAction={(action: Action) =>
               console.log("onExecuteAction " + action)
             }
-            onActionOpenUrl={(action: Action) =>
-              console.log("onActionOpenUrl" + action)
-            }
+            // onActionOpenUrl={(action: Action) =>
+            //   console.log("onActionOpenUrl" + action)
+            // }
             onActionShowCard={(action: Action) =>
               console.log("onActionShowCard" + action)
             }
