@@ -16,8 +16,8 @@ Insert connection String and endpoint
 
 ```ts
 
-const connectionString = 'HEEEEEEEEEERRRRRRRRRREEEEEEEEEE'
-const endpoint = "HEEEEEEEEEERRRRRRRRRREEEEEEEEEE"
+const connectionString = ''
+const endpoint = ""
 
 ```
 
